@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="47a200958ffd43cca9ba3fdcad6bb858" Name="Diagram1">
+        <EntityTypeShape EntityType="OnlineOrderHomesModel.Authors" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineOrderHomesModel.Estates" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineOrderHomesModel.Facilities" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineOrderHomesModel.OnlinePlatforms" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineOrderHomesModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineOrderHomesModel.Users" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="OnlineOrderHomesModel.FK_OnlinePlatforms_Authors" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineOrderHomesModel.FK_Estates_Facilities" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineOrderHomesModel.FK_OnlinePlatforms_Estates" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineOrderHomesModel.FK_Users_OnlinePlatforms" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
