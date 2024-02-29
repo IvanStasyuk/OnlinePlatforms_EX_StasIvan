@@ -45,7 +45,8 @@ namespace OnlinePlatforms_EX_StasIvan.Pages
             {
                 Estates addEstate = new Estates()
                 {
-                    NameEstate = NameEstateCode,
+                    id_Estate = int.Parse(idestate.Text),
+                    NameEstate = NameEstateCode.Text,
                     City = CityEstate.Text,
                     YearBuilding = DateTime.Parse(YearBuilding.Text),
                     Telephone = TextTelephonCode.Text,

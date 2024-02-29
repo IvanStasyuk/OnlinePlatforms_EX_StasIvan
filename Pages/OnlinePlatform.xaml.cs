@@ -58,7 +58,7 @@ namespace OnlinePlatforms_EX_StasIvan.Pages
 
         private void butNavEstates_Click(object sender, RoutedEventArgs e)
         {
-            Manager.myFrame.Navigate(new Pages.Estates());
+            Manager.myFrame.Navigate(new Pages.EstatesPage());
         }
     }
 }

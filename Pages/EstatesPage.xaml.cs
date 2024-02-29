@@ -16,24 +16,24 @@ using System.Windows.Shapes;
 namespace OnlinePlatforms_EX_StasIvan.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Estates.xaml
+    /// Логика взаимодействия для EstatesPage.xaml
     /// </summary>
-    public partial class Estates : Page
+    public partial class EstatesPage : Page
     {
-        public Estates()
+        public EstatesPage()
         {
             InitializeComponent();
-            GridEstates.ItemsSource = OnlineOrderHomesEntities.GetContext().OnlinePlatforms.ToList();
+            GridEstates.ItemsSource = OnlineOrderHomesEntities.GetContext().Estates.ToList();
         }
 
         private void butRedState_Click(object sender, RoutedEventArgs e)
         {
-
+            //Manager.myFrame.Navigate(new Pages.AddEstate((sender as Button).DataContext as Estates));
         }
 
         private void butAddState_Click(object sender, RoutedEventArgs e)
         {
-
+            Manager.myFrame.Navigate(new Pages.AddEstate());
         }
 
         private void butDeleteState_Click(object sender, RoutedEventArgs e)

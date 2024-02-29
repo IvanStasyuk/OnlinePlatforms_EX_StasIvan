@@ -24,7 +24,7 @@
           <Property Name="NameEstate" Type="nvarchar(max)" />
           <Property Name="City" Type="nvarchar" MaxLength="50" />
           <Property Name="YearBuilding" Type="date" />
-          <Property Name="Telephone" Type="nchar" MaxLength="20" />
+          <Property Name="Telephone" Type="nvarchar" MaxLength="50" />
           <Property Name="PriceEstate" Type="money" />
           <Property Name="Purchase" Type="nvarchar" MaxLength="50" />
         </EntityType>
@@ -167,7 +167,7 @@
           <Property Name="NameEstate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="YearBuilding" Type="DateTime" Precision="0" />
-          <Property Name="Telephone" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Telephone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="PriceEstate" Type="Decimal" Precision="19" Scale="4" />
           <Property Name="Purchase" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Facilities" Relationship="Self.FK_Estates_Facilities" FromRole="Estates" ToRole="Facilities" />

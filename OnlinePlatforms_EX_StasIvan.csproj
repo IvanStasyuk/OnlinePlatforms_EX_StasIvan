@@ -88,8 +88,8 @@
     <Compile Include="Pages\AddOnlinePlatform.xaml.cs">
       <DependentUpon>AddOnlinePlatform.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Estates.xaml.cs">
-      <DependentUpon>Estates.xaml</DependentUpon>
+    <Compile Include="Pages\EstatesPage.xaml.cs">
+      <DependentUpon>EstatesPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\OnlinePlatform.xaml.cs">
       <DependentUpon>OnlinePlatform.xaml</DependentUpon>
@@ -120,7 +120,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\Estates.xaml">
+    <Page Include="Pages\EstatesPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
