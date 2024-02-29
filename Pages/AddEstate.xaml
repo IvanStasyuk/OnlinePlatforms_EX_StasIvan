@@ -1,0 +1,39 @@
+﻿<Page x:Class="OnlinePlatforms_EX_StasIvan.Pages.AddEstate"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:OnlinePlatforms_EX_StasIvan.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddEstate">
+
+    <Grid Background="AntiqueWhite">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical" Grid.Column="1" Grid.RowSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Наименование недвижимости" HorizontalAlignment="Center" Margin="5"></TextBlock>
+            <TextBox x:Name="NameEstateCode" Margin="5"></TextBox>
+            <TextBlock Text="Город" HorizontalAlignment="Center" Margin="5"></TextBlock>
+            <TextBox x:Name="CityEstate" Margin="5"></TextBox>
+            <TextBlock Text="Год основания" HorizontalAlignment="Center" Margin="5"></TextBlock>
+            <TextBox x:Name="YearBuilding" Margin="5"></TextBox>
+            <TextBlock Text="Телефон недвижимости" HorizontalAlignment="Center" Margin="5"></TextBlock>
+            <TextBox x:Name="TextTelephonCode" Margin="5"></TextBox>
+            <TextBlock Text="Цена недвижимости" HorizontalAlignment="Center" Margin="5"></TextBlock>
+            <TextBox x:Name="PriceEstateCode" Margin="5"></TextBox>
+            <TextBlock Text="Утверждение покупки" HorizontalAlignment="Center" Margin="5"></TextBlock>
+            <TextBox x:Name="PurchaseEstate" Margin="5"></TextBox>
+        </StackPanel>
+        <Button x:Name="butAddEstate" Content="Добавить" Background="LightGreen" Height="30" Width="120" Grid.Row="2" Grid.Column="1" VerticalAlignment="Bottom" Click="butAddEstate_Click"></Button>
+        <Button x:Name="butback" Content="Вернуться" Background="AliceBlue" Height="30" Width="120" Grid.Column="3" VerticalAlignment="Top" Margin="15" Click="butback_Click"></Button>
+    </Grid>
+</Page>

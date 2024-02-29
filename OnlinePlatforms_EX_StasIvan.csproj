@@ -82,8 +82,14 @@
     <Compile Include="OnlinePlatforms.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AddEstate.xaml.cs">
+      <DependentUpon>AddEstate.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AddOnlinePlatform.xaml.cs">
       <DependentUpon>AddOnlinePlatform.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Estates.xaml.cs">
+      <DependentUpon>Estates.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\OnlinePlatform.xaml.cs">
       <DependentUpon>OnlinePlatform.xaml</DependentUpon>
@@ -106,7 +112,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\AddEstate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\AddOnlinePlatform.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Estates.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

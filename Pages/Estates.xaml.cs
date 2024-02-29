@@ -16,33 +16,38 @@ using System.Windows.Shapes;
 namespace OnlinePlatforms_EX_StasIvan.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для OnlinePlatform.xaml
+    /// Логика взаимодействия для Estates.xaml
     /// </summary>
-    public partial class OnlinePlatform : Page
+    public partial class Estates : Page
     {
-        public OnlinePlatform()
+        public Estates()
         {
             InitializeComponent();
-            GridOnlinePlatforms.ItemsSource = OnlineOrderHomesEntities.GetContext().OnlinePlatforms.ToList();
+            GridEstates.ItemsSource = OnlineOrderHomesEntities.GetContext().OnlinePlatforms.ToList();
+        }
+
+        private void butRedState_Click(object sender, RoutedEventArgs e)
+        {
+
         }
 
         private void butAddState_Click(object sender, RoutedEventArgs e)
         {
-            Manager.myFrame.Navigate(new Pages.AddOnlinePlatform());
+
         }
 
         private void butDeleteState_Click(object sender, RoutedEventArgs e)
         {
-            var DelPlatform = GridOnlinePlatforms.SelectedItems.Cast<OnlinePlatforms>().ToList();
+            var DelEstate = GridEstates.SelectedItems.Cast<Estates>().ToList();
             try
             {
-                if (MessageBox.Show($"Вы уверены что хотите удалить {DelPlatform.Count()} элементов?", "Ошибка", 
+                if (MessageBox.Show($"Вы уверены что хотите удалить {DelEstate.Count()} элементов?", "Ошибка",
                     MessageBoxButton.YesNo) == MessageBoxResult.Yes)
                 {
-                    OnlineOrderHomesEntities.GetContext().OnlinePlatforms.RemoveRange(DelPlatform);
+                    OnlineOrderHomesEntities.GetContext().Estates.RemoveRange(DelEstate);
                     OnlineOrderHomesEntities.GetContext().SaveChanges();
                     MessageBox.Show("Данные удалены", "Успешно", MessageBoxButton.OK, MessageBoxImage.Information);
-                    GridOnlinePlatforms.ItemsSource = OnlineOrderHomesEntities.GetContext().OnlinePlatforms.ToList();
+                    GridEstates.ItemsSource = OnlineOrderHomesEntities.GetContext().Estates.ToList();
                 }
             }
             catch (Exception ex)
@@ -51,14 +56,12 @@ namespace OnlinePlatforms_EX_StasIvan.Pages
             }
         }
 
-        private void butRedState_Click(object sender, RoutedEventArgs e)
+        private void butBack_Click(object sender, RoutedEventArgs e)
         {
-            //Manager.myFrame.Navigate(new Pages.AddOnlinePlatform((sender as Button).DataContext as OnlinePlatforms));
-        }
-
-        private void butNavEstates_Click(object sender, RoutedEventArgs e)
-        {
-            Manager.myFrame.Navigate(new Pages.Estates());
+            if (Manager.myFrame.CanGoBack)
+            {
+                Manager.myFrame.GoBack();
+            }
         }
     }
 }
